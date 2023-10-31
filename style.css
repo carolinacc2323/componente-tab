@@ -10,3 +10,125 @@
 .tab-content .tab-pane:first-child {
     display: block;
 }
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 100%;
+    background-color: rgb(75, 113, 146);
+}
+header{
+    display: grid;
+    grid-template-columns: 0.5fr 2fr ; /*fr significa fraccion*/
+    column-gap: 5px;/*column-gap es el espacio entre las columnas*/
+    row-gap: 10px;
+    background-color:rgb(93, 206, 206);
+}
+.header-text{
+    font-size: 150%;
+    margin-top: 1em;
+    margin-left: 10em;
+    padding: 1em;
+    font-family: "Lucida Console", Monaco, monospace;
+}
+.logo {
+    width: 100px;
+    margin-left: 10px;
+    /* margin: 2.5em 1em 1em 1em; */
+    padding: 1em;
+}
+.header img{
+    width: 150px;
+    height: 150px;
+    text-align: center;
+}
+.contenidoderecha{
+    margin-top: 3em;
+    margin-left: 15em;
+}
+/* .operaciones{
+    display: grid;
+    grid-template-areas: "qr button";
+    grid-template-columns: 1fr 8fr;
+    grid-template-rows: auto auto auto auto;
+    row-gap: 30px;
+} */
+.qr{
+    grid-area: qr;
+}
+.grid-container{
+    /* margin-top: 2em;
+    margin-right: 6em;
+    margin-left: 6em;
+    padding-top: 0.5em; */
+    display: grid;
+    grid-template-columns:  1fr 2fr 1fr ; /*una nueva medida, una fración*/
+    column-gap: 12px; 
+    row-gap: 12px;
+    text-align: center;
+}
+h2 {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    display:inline-block;
+    margin: 40px 8px 10px 8px; 
+    color: #cccccc;
+}
+h2.active {
+    color: #0d0d0d;
+    border-bottom: 2px solid #5fbae9;
+}
+h2.inactive {
+    color: #cccccc;
+}
+.grid-container .resource form{
+    border: solid skyblue 5px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border-radius: 10px 10px 10px 10px;
+    background: #fff;
+    padding: 30px;
+    width: 90%;
+    max-width: 450px;
+    position: relative;
+    padding: 0px;
+    -webkit-box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+    box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+    text-align: center;
+    margin-top: 3em;
+    margin-left: 6em;
+}
+#formFooter {
+    background-color: #f6f6f6;
+    border-top: 1px solid #dce8f1;
+    padding: 25px;
+    text-align: center;
+    -webkit-border-radius: 0 0 10px 10px;
+    border-radius: 0 0 10px 10px;
+}
+.grid-container img{
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    border-radius: 10%;
+}
+.login{
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    border-radius: 5px;
+    border: 3px #56BAED solid;
+    background-color: #56BAED;
+    font-size: 100%;
+    padding: 4px 4px 4px 4px;
+}
+.login:hover{
+    background-color: darkslateblue;
+    cursor: pointer;
+}
+footer{
+    text-align: center;
+    font-size: 100%;
+}
