@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.tab-content .tab-pane {
+    /* background-color: cornflowerblue; */
+    display: none;
+}
+.tab-content .tab-pane:first-child {
+    display: block;
+}

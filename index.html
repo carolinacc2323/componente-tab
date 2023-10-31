@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Componentet tab</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-tabs.css">
+    <title>QR</title>
+    <link rel="shortcut icon" href="Logo-removebg-preview.png" type="image/x-icon">
+</head>
+<body>
+    <div class="grid-container">
+        <div class="resource">
+            <form>
+                <img src="c2.jpg" alt="" width="150px" height="150px">
+                <div>
+                    <h2 class="active"> Acceder </h2>
+                    <h2 class="inactive underlineHover">Registrarse</h2>
+                <label for=»user»> </label>
+                <input type=»text» id=»user» required name="Correo" placeholder="Correo"/>
+                </div>
+                <div>
+                <label for=»password»></label>
+                <input type=»password» id=»password» required name="Contraseña" placeholder="Contraseña"/>
+                </div>
+                <button class="login" type=»submit»> Login </button>
+                <div id="formFooter">
+                    <a class="underlineHover" href="#">¿Has olvidado tu contraseña?</a>
+                </div>
+            </form>
+                <script type=»module» src=»»></script>
+        </div>
+        <div class="contenidoderecha">
+            <div class="tab-component">
+                <!-- Las pestañas se crearán aquí -->
+            <ul class="tab-list">
+                <li><a href="#" class="tab-link">Tab 1</a></li>
+                <li><a href="#" class="tab-link">Tab 2</a></li>
+                <li><a href="#" class="tab-link">Tab 3</a></li>
+            </ul>
+                    <!-- El contenido de las pestañas se creará aquí -->
+        <div class="tab-content">
+                <div class="tab-pane">
+                    Contenido de la Tab 1
+                </div>
+                <div class="tab-pane">
+                    Contenido de la Tab 2
+                </div>                
+                <div class="tab-pane">
+                    Contenido de la Tab 3
+                </div>       
+        </div>
+    </div>
+
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
