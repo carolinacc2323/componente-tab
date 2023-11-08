@@ -3,65 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Componentet tab</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="style-tabs.css">
     <title>QR</title>
     <link rel="shortcut icon" href="Logo-removebg-preview.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="grid-container">
-        <div class="header">
-            <header>
-                <img src="Logo-removebg-preview.png" alt="Enclaves Singulares Logo">
-                <div class="header-text">
-                    <h1>Editor de códigos QR</h1>
-                </div>
-            </header>
+    <div class="container">
+    <div class="header">
+    <header>
+        <div class="logo">
+            <img src="Logo-removebg-preview.png" alt="Enclaves Singulares Logo">
         </div>
-        <div class="resource">
-            <form>
-                <img src="c2.jpg" alt="" width="150px" height="150px">
-                <div>
-                    <h2 class="active"> Acceder </h2>
-                    <h2 class="inactive underlineHover">Registrarse</h2>
-                <label for=»user»> </label>
-                <input type=»text» id=»user» required name="Correo" placeholder="Correo"/>
-                </div>
-                <div>
-                <label for=»password»></label>
-                <input type=»password» id=»password» required name="Contraseña" placeholder="Contraseña"/>
-                </div>
-                <button class="login" type=»submit»> Login </button>
-                <div id="formFooter">
-                    <a class="underlineHover" href="#">¿Has olvidado tu contraseña?</a>
-                </div>
-            </form>
-                <script type=»module» src=»»></script>
+        <div class="header-text">
+            <h1>Editor De Códigos QR</h1>
         </div>
-        <div class="contenidoderecha">
-            <div class="tab-component">
-                <!-- Las pestañas se crearán aquí -->
-            <ul class="tab-list">
-                <li><a href="#" class="tab-link">Tab 1</a></li>
-                <li><a href="#" class="tab-link">Tab 2</a></li>
-                <li><a href="#" class="tab-link">Tab 3</a></li>
-            </ul>
-                    <!-- El contenido de las pestañas se creará aquí -->
-        <div class="tab-content">
-                <div class="tab-pane">
-                    Contenido de la Tab 1
-                </div>
-                <div class="tab-pane">
-                    Contenido de la Tab 2
-                </div>                
-                <div class="tab-pane">
-                    Contenido de la Tab 3
-                </div>       
-        </div>
+    </header>
     </div>
-
+        <div class="tab-component">
+            <!-- Las pestañas se crearán aquí -->
+        <ul class="tab-list">
+            <label for="url"><li><a href="#" class="tab-link">URL</a></li></label>
+            <label for="geolocalizacion"><li><a href="#" class="tab-link">Geolocalización</a></li></label>
+            <label for="email"><li><a href="#" class="tab-link">Email</a></li></label>
+            <label for="tamano"><li><a href="#" class="tab-link">Tipos</a></li></label>
+            <label for="wifi"><li><a href="#" class="tab-link">Reseñas</a></li></label>
+        </ul>
+    <div class="tab-content">
+            <div class="tab-pane">
+                <h2>El funcionamiento de los URL</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam incidunt dolor porro modi possimus, quisquam ex obcaecati at, eos voluptatem, quas magnam? Mollitia laudantium illo debitis recusandae reiciendis, officia quos!</p>
+                <img src="qr-code (7).png" alt="" class="contenido1" height="200px" width="200px">
+            </div>
+            <div class="tab-pane">
+                <h2>Una nueva forma de hacer turismo</h2>
+                <p>Por favor introduzca la longitud y la latitud del sitio en donde se encuentra o hacia donde se dirige</p>
+                <div class="geo">
+                    <video src="geo.mp4" autoplay loop></video>
+                    <form class="formulario" id="coordsForm">
+                        Longitud: <input type="text" id="longitud" name="longitud" pattern="^[-+]?([1-8]?\d(\.\d+)?|90(\.0+)?)$" required>
+                        <div id="errorLongitud" style="color:red;"></div>
+                        <br>
+                        Latitud: <input type="text" id="latitud" name="latitud" pattern="^[-+]?([1-8]?\d(\.\d+)?|90(\.0+)?)$" required>
+                        <div id="errorLatitud" style="color:red;"></div>
+                        <br>
+                        <button type="submit" id="enviar3">Generar</button>
+                    </form>
+                </div>
+            </div>                
+            <div class="tab-pane">
+                <h2>Escribe tu Email</h2>
+                <p>Por favor, para continuar con el proceso se requiere su email </p>
+                <div class="Email">
+                    <img src="email.jpg" alt="" id="email">
+                <form action="email">
+                    <div>
+                    <input type=»text» id="user" required name="Correo" placeholder="Correo"/>
+                    </div>
+                    <input class="enviar" type="submit" id="enviar1" value="Enviar">
+                </form>
+            </div>
+            </div>
+            <div class="tab-pane">
+                <h2>QR</h2>
+                <p>Elige el QR que más te guste</p>
+                <br>
+                <div id="qrs">
+                <input type="radio" name="tam" />
+                <label for="box1"><img src="qr-code (3).png" height="80px" width="80px"></label>
+                <input type="radio" name="tam" />
+                <label for="box2"><img src="qr-code (4).png" height="80px" width="80px"></label>
+                <input type="radio" name="tam" />
+                <label for="box2"><img src="qr-code (5).png" height="80px" width="80px"></label>
+                <input type="radio" name="tam" />
+                <label for="box2"><img src="qr-code (6).png" height="80px" width="80px"></label>
+                </div>
+            </div>
+            <div class="tab-pane">
+                <h2>Reseñas</h2>
+                <p>Dejános tu comentario y ayudanos a mejorar.</p>
+                <form>
+                    <div class="email">
+                    <textarea rows="5" cols="50"></textarea><br>
+                    <input type="submit" value="Enviar" placeholder="Escribir comentario" id="enviar2">
+                    </div>
+                </form>
+            </div>
 </div>
+    <footer>
+        <br /> <br /><br />
+        <p>2023 Carolina Cango Cobos&copy</p>
+    </footer>
+    <br>
     <script src="script.js"></script>
 </body>
 </html>
